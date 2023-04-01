@@ -14,6 +14,8 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url('http://estrogen.bio/assets/bkrnd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
@@ -26,22 +28,66 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+}
+.card .headertext{
+    font-family: Montserrat, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(245, 244, 244);
+}
+
+.card .skillbadges{
+
+	background-color:rgba(0, 213, 255, 0);
+	justify-content: center;
+	padding: 15px;
+    color:(var(--accent));
+	
+
+}
+
+.card .skillbadges .ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.card .skillbadges .ul .li {
+	border: 1px solid (var(--accent));
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+.card .biotext{
+    font-family: Montserrat, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(245, 244, 244);
 }
 
 .card .pfp {
-    border-radius: 50%;
-    width: 40%;
+    border-radius: 25%;
+    width: 35%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-    border: 10px rgb(var(--accent)) solid;
+    border: 8px rgb(var(--accent)) solid;
     box-shadow: 0px 0px 10px 5px rgba(var(--accent), 0.5);
 }
 
 .card .username {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
     margin-top: 10px;
@@ -83,7 +129,7 @@ body {
     margin: 10px;
     padding: 6px 15px;
     border-radius: 25px;
-    background:red;
+    background:rgb(165, 35, 122);
     display: flex;
     align-items: center;
     
@@ -103,7 +149,7 @@ body {
 
 .card .linkcontainer {
     width: 70%;
-    height: 30px;
+    height: 60px;
     margin: 10px;
     border-radius: 25px;
     background: rgb(var(--accent));

@@ -12,7 +12,6 @@ body {
 	font-family: Montserrat, sans-serif;
 	
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 
@@ -25,7 +24,7 @@ h3 {
 }
 
 h6 {
-	margin: 5px 0;
+	margin: 3px 0;
 	text-transform: uppercase;
 }
 
@@ -66,32 +65,28 @@ p {
 
 button.primary {
 	background-color: #000000;
-	border: 1px solid #000000;
+	border: 1px solid #b1b1b1;
 	border-radius: 3px;
 	color: #000000;
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
 	padding: 10px 25px;
+	justify-content: center;
 }
 
 button.primary.ghost {
 	background-color: transparent;
-    color:#000000
+    color:#b1b1b1;
+font-style: bold;
+justify-content: center;
 }
 
-.skills {
-	background-color:rgba(0, 213, 255, 0);
-	text-align: center;
-	padding: 15px;
-	margin-top: 30px;
-    color:#000000
-}
+
 
 i {
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 10px;
-color:#000000
+color:(var(--accent));
 }
 .skills ul {
 	list-style-type: none;

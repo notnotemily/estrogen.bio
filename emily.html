@@ -28,20 +28,36 @@
 
 <body>
 
+  <style>    
+    :root {
+        --bg1: 223, 158, 243;
+        --bg2: 0, 204, 255;
+        --bg3: 162, 48, 255;
+        --card: 253, 246, 255;
+        --accent: 155, 52, 235;
+        --prn1: 155, 52, 235;
+        --prn2: 123, 151, 186;
+    }
+        </style>
+  
 <div class="main">
 
   <div class="card">
 
-	<div class="pfp"> <img class="pfp" src="assets/profilepic.gif" alt="user" /> </div>
+<img class="pfp" src="assets/profilepic.gif" alt="emily" />
 
 	<h3 class=username>emily</h3>
 
+  <div class="pronouns">
+    <div class="pronoun">she/her</div>
+</div>
+  
   <div class="badges">
-    <div class="tooltip badge" data-type="dev" tooltip="t4t.gg Developer">
-        <span>dev</span>
+    <div class="tooltip badge" data-type="developer" tooltip="t4t.gg Developer">
+        <span>Dev</span>
     </div>
 
-    <div class="tooltip badge" data-type="alpha">
+    <div class="tooltip badge" data-type="user">
         <span>UID 1</span>
     </div>
 
@@ -49,18 +65,10 @@
         <span>emily</span>
     </div>
 </div>
-	<h6>RVA</h6>
-	<p>software dev and <br/> internet shitposter</p>
-	<div class="buttons">
-        <a href="mailto:emilyasf@proton.me">
-		<button class="primary ghost">
-			contact
-		</button>
-    </a>
-	</div>
-</div>
-	<div class="skills">
-		<h6>Links</h6>
+	<h6 class="headertext">RVA</h6>
+	<p class="biotext">software dev and <br/> internet shitposter</p>
+  <div class="skillbadges">
+		<h6 class="biotext">Links</h6>
 		<ul>
 
       <a href="">
@@ -69,8 +77,8 @@
             <a href="https://www.instagram.com/omgcloudyy/">
             <i class="fa-brands fa-instagram"></i>
           </a>
-            <a href="https://www.tiktok.com/@omgemilyy">
-            <i class="fa-brands fa-tiktok"></i>
+            <a href="https://github.com/notnotemily">
+            <i class="fa-brands fa-github" ></i>
           </a>
             <a href="https://www.youtube.com/channel/UCPlYHLCOSd2BoUbh8A1XO7w">
             <i class="fa-brands fa-youtube"></i>
@@ -78,6 +86,15 @@
 
 		</ul>
 	</div>
+	<div class="buttons">
+        <a href="mailto:emilyasf@proton.me">
+		<button class="primary ghost">
+			contact
+		</button>
+    </a>
+	</div>
+</div>
+	
 </div>
 
 </body>
