@@ -24,11 +24,11 @@ body {
     padding-bottom: 100px;
     border-radius: 25px;
     position: absolute;
+    text-align:center;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    justify-content: center;
     box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 }
 .card .headertext{
@@ -43,32 +43,29 @@ body {
 
 i {
     margin-right: 10px;
-    margin-left: 10px;
-    justify-content: center;
 color:rgba(255, 0, 179, 0.836);
 }
 
 .card .skillbadges{
-
+justify-content: center;
 	background-color:rgba(0, 213, 255, 0);
     color:rgba(255, 0, 179, 0.836);
-	justify-content: center;
+}
+
+.card .icon{
+
+padding: 10px;
 
 }
 
 .card .skillbadges .ul {
 	list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    left: 50%;
-    right: 50%;
-justify-content: center;
+
 }
 
 .card .skillbadges .ul .li {
 	border: 1px solid rgba(255, 0, 179, 0.836);
 	border-radius: 2px;
-    justify-content: center;
 	font-size: 30px;
 	padding: 7px;
 }
