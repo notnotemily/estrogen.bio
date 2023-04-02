@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body {
-  background: rgb(221,18,219);
+  background: rgb(0, 0, 0);
     font-family: "mc";
     color: rgb(224, 224, 224);
     display: flex;
@@ -130,7 +130,7 @@ a:link {
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
     color: #4089a6;
-    background-color: #ffffff;
+    background-color: #000000;
     -webkit-font-smoothing: antialiased;
     /*&.is-changing{
       &:before,

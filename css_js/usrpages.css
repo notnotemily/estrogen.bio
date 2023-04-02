@@ -28,6 +28,7 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    justify-content: center;
     box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 }
 .card .headertext{
@@ -40,29 +41,54 @@ body {
     color: rgb(245, 244, 244);
 }
 
+i {
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+color:rgba(255, 0, 179, 0.836);
+}
+
 .card .skillbadges{
 
 	background-color:rgba(0, 213, 255, 0);
+    color:rgba(255, 0, 179, 0.836);
 	justify-content: center;
-	padding: 15px;
-    color:(var(--accent));
-	
 
 }
 
 .card .skillbadges .ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    display: inline-block;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+justify-content: center;
 }
 
 .card .skillbadges .ul .li {
-	border: 1px solid (var(--accent));
+	border: 1px solid rgba(255, 0, 179, 0.836);
 	border-radius: 2px;
-	display: inline-block;
-	font-size: 12px;
-	margin: 0 7px 7px 0;
+    justify-content: center;
+	font-size: 30px;
 	padding: 7px;
+}
+
+.button.primary {
+	background-color: #000000;
+	border: 1px solid #b1b1b1;
+	border-radius: 3px;
+	color: #000000;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+	justify-content: center;
+}
+
+.button.primary.ghost {
+	background-color: transparent;
+    color:#b1b1b1;
+font-style: bold;
+justify-content: center;
 }
 
 .card .biotext{

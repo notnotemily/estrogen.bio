@@ -58,9 +58,6 @@
     animation: fadein 2s forwards;
     animation-delay: calc(var(--order) * 150ms);
 }
-.users .list .user:hover {
-    
-}
 
 @keyframes fadein {
     0% {
