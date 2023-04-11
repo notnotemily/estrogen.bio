@@ -106,6 +106,7 @@ a:link {
     transition: 0.3s;
     font-weight: bolder;
     filter: none;
+   color: rgb(255, 189, 233);
 }
 
 @-webkit-keyframes delay {
@@ -185,57 +186,94 @@ a:link {
     background-color: #404949;
   }
   
-  .loader {
-    margin: 0 auto;
-    width: 60px;
-    height: 50px;
-    text-align: center;
-    font-size: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-            transform: translateY(-50%) translateX(-50%);
-    z-index: 500;
-    opacity: 0;
-  }
-  .loader > div {
-    height: 100%;
-    width: 8px;
-    display: inline-block;
-    float: left;
-    margin-left: 2px;
-    -webkit-animation: delay 0.8s infinite ease-in-out;
-            animation: delay 0.8s infinite ease-in-out;
-  }
-  .loader .bar1 {
-    background-color: #f38aee;
-  }
-  .loader .bar2 {
-    background-color: #80c6f5;
-    -webkit-animation-delay: -0.7s;
-            animation-delay: -0.7s;
-  }
-  .loader .bar3 {
-    background-color: #ffffff;
-    -webkit-animation-delay: -0.6s;
-            animation-delay: -0.6s;
-  }
-  .loader .bar4 {
-    background-color: #ffffff;
-    -webkit-animation-delay: -0.5s;
-            animation-delay: -0.5s;
-  }
-  .loader .bar5 {
-    background-color: #80c6f5;
-    -webkit-animation-delay: -0.4s;
-            animation-delay: -0.4s;
-  }
-  .loader .bar6 {
-    background-color: #f38aee;
-    -webkit-animation-delay: -0.3s;
-            animation-delay: -0.3s;
-  }
+  .rainbow {
+    /* Chrome, Safari, Opera */
+   -webkit-animation: rainbow 15s infinite ease-out alternate;
+ 
+   /* Internet Explorer */
+   -ms-animation: rainbow 15s infinite ease-out alternate;
+ 
+   /* Standar Syntax */
+   animation: rainbow 15s infinite ease-out alternate;
+ }
+ 
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes rainbow{
+   0%{color: #9900cc;}
+   9.09%{color: #6600ce;}
+   18.18%{color: #4100b4;}
+   27.27%{color: #0100fc;}
+   36.36%{color: #31cbcb;}
+   45.45%{color: #01cc00;}
+   54.54%{color: #99fe00;}
+   63.63%{color: #fffe01;}
+   72.72%{color: #ffcc00;}
+   81.81%{color: #fe9900;}
+   90.9%{color: #ff6501;}
+   100%{color: #fe0000;}
+ }
+ 
+ /* Standar Syntax */
+ @keyframes rainbow{
+   0%{color: #9900cc;}
+   9.09%{color: #6600ce;}
+   18.18%{color: #4100b4;}
+   27.27%{color: #0100fc;}
+   36.36%{color: #31cbcb;}
+   45.45%{color: #01cc00;}
+   54.54%{color: #99fe00;}
+   63.63%{color: #fffe01;}
+   72.72%{color: #ffcc00;}
+   81.81%{color: #fe9900;}
+   90.9%{color: #ff6501;}
+   100%{color: #fe0000;}
+ }
+ 
+ .cssload-container {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #696768;
+ z-index: 999999;
+ }
+ 
+ .cssload-container .cssload-item {
+   margin: auto;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 49px;
+   height: 49px;
+   background-color: rgb(255,255,255);
+   box-sizing: border-box;
+     -o-box-sizing: border-box;
+     -ms-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+   box-shadow: 0 0 8px 1px rgba(0,0,0,0.25);
+     -o-box-shadow: 0 0 8px 1px rgba(0,0,0,0.25);
+     -ms-box-shadow: 0 0 8px 1px rgba(0,0,0,0.25);
+     -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.25);
+     -moz-box-shadow: 0 0 8px 1px rgba(0,0,0,0.25);
+ }
+ 
+ .cssload-container .cssload-moon {
+   border-bottom: 10px solid rgb(102,102,102);
+   border-radius: 50%;
+     -o-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+   animation: spin 1.15s ease infinite;
+     -o-animation: spin 1.15s ease infinite;
+     -ms-animation: spin 1.15s ease infinite;
+     -webkit-animation: spin 1.15s ease infinite;
+     -moz-animation: spin 1.15s ease infinite;
+ }
   
   main {
     height: 100vh;

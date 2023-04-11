@@ -18,6 +18,11 @@ body {
     background-size: cover;
 }
 
+a {
+    color: rgb(var(--accent));
+    text-decoration: none;
+}
+
 .card {
     background: rgba(62, 55, 77, 0.884);
     width: clamp(500px, 20%, 20%);
@@ -41,20 +46,24 @@ body {
     color: rgb(245, 244, 244);
 }
 
-i {
-    margin-right: 10px;
-color:rgba(255, 0, 179, 0.836);
-}
 
 .card .skillbadges{
 justify-content: center;
 	background-color:rgba(0, 213, 255, 0);
-    color:rgba(255, 0, 179, 0.836);
+    color:rgba(231, 231, 231, 0.836);
 }
 
 .card .icon{
+size: 30px;
+padding: 7px;
+padding-right: 13px;
+color: rgba(255, 255, 255, 0.849);
 
-padding: 10px;
+}
+
+.fa-brands {
+
+font-size: 20px;
 
 }
 
@@ -231,51 +240,3 @@ justify-content: center;
   }
 
 
-#discord:hover, #discord:hover svg {
-    color: #5865F2; 
-    fill: #5865F2; 
-}
-#twitter:hover, #twitter:hover svg {
-    color: #1DA1F2;
-    fill: #1DA1F2;
-}
-#github:hover, #github:hover svg {
-    color: #686262;
-    fill: #686262;
-}
-#youtube:hover, #youtube:hover svg {
-    color: #FF0000;
-    fill: #FF0000;
-}
-#steam:hover, #steam:hover svg {
-    color:#000000;
-    fill:#000000;
-}
-#spotify:hover, #spotify:hover svg {
-    color: #1DB954;
-    fill: #1DB954;
-}
-#switch:hover, #switch:hover svg {
-    color: #E60012;
-    fill: #E60012;
-}
-#instagram:hover, #instagram:hover svg {
-    color: #E4405F;
-    fill: #E4405F;
-}
-#tiktok:hover, #tiktok:hover svg {
-    color: #000000;
-    fill: #000000;
-}
-#pronounpage:hover, #pronounpage:hover svg {
-    color: rgb(222, 59, 236);
-    fill:rgb(222, 59, 236);
-}
-#soundcloud:hover, #soundcloud:hover svg {
-    color: #FF3300;
-    fill: #FF3300;
-}
-#custom:hover, #custom:hover svg {
-    color: rgb(255, 27, 225);
-    fill: rgb(255, 27, 225);
-}
