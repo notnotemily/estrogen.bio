@@ -34,7 +34,7 @@ p {
 }
 
 .card-container {
-	background-color:rgba(0, 213, 255, 0.329);
+	background-color:rgba(70, 68, 70, 0.418);
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
     color:#000000;
@@ -47,7 +47,7 @@ p {
 
 .card-container .pro {
 	color:rgb(0, 0, 0);
-	background-color: #FEBB0B;
+	background-color: #fe0bfe;
 	border-radius: 3px;
 	font-size: 14px;
 	font-weight: bold;
@@ -63,10 +63,50 @@ p {
 	padding: 7px;
 }
 
+button.primary {
+	background-color: #000000;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	color: #000000;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+    color:#000000
+}
 
 
+.skills {
+	background-color:rgba(0, 213, 255, 0);
+	text-align: center;
+	padding: 15px;
+	margin-top: 30px;
+    color:#000000
+}
 
+i {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+color:#000000
+}
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
+.skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
 
 
 footer {
