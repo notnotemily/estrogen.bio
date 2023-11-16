@@ -27,6 +27,14 @@
 
     
 }
+
+.users .micro {
+    font-size: 10px;
+    text-align: center;
+    text-anchor: middle;
+
+}
+
 .users .list {
     display: flex;
     justify-content: center;

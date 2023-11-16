@@ -97,16 +97,16 @@ a:link {
 
 .heading-logo {
     width: 20em;
+    mix-blend-mode: difference;
 }
 
 .heading .logo {
     position: relative;
     padding: 25px;
-    font-size: 20px;
+    font-size: 30px;
     transition: 0.3s;
     font-weight: bolder;
     filter: none;
-   color: rgb(255, 189, 233);
 }
 
 @-webkit-keyframes delay {
@@ -186,49 +186,53 @@ a:link {
     background-color: #404949;
   }
   
-  .rainbow {
-    /* Chrome, Safari, Opera */
-   -webkit-animation: rainbow 15s infinite ease-out alternate;
+  
+  .rainbow{
+      animation: rainbow 2.5s linear;
+      animation-iteration-count: infinite;
+  }
+  
+  @keyframes rainbow{
+      100%,0%{
+        color: rgb(0, 195, 255);
+      }
+      8%{
+        color: rgb(0, 174, 255);
+      }
+      16%{
+        color: rgb(0, 110, 255);
+      }
+      25%{
+        color: rgb(255, 0, 212);
+      }
+      33%{
+        color: rgb(255, 82, 226);
+      }
+      41%{
+        color: rgb(255, 255, 255);
+      }
+      50%{
+        color: rgb(255, 255, 255);
+      }
+      58%{
+        color: rgb(255, 82, 226);
+      }
+      66%{
+        color: rgb(255, 0, 212);
+      }
+      75%{
+        color: rgb(0, 110, 255);
+      }
+      83%{
+        color: rgb(0, 174, 255);
+      }
+      91%{
+        color: rgb(0, 195, 255);
+      }
+  }
  
-   /* Internet Explorer */
-   -ms-animation: rainbow 15s infinite ease-out alternate;
- 
-   /* Standar Syntax */
-   animation: rainbow 15s infinite ease-out alternate;
- }
- 
- /* Chrome, Safari, Opera */
- @-webkit-keyframes rainbow{
-   0%{color: #9900cc;}
-   9.09%{color: #6600ce;}
-   18.18%{color: #4100b4;}
-   27.27%{color: #0100fc;}
-   36.36%{color: #31cbcb;}
-   45.45%{color: #01cc00;}
-   54.54%{color: #99fe00;}
-   63.63%{color: #fffe01;}
-   72.72%{color: #ffcc00;}
-   81.81%{color: #fe9900;}
-   90.9%{color: #ff6501;}
-   100%{color: #fe0000;}
- }
- 
- /* Standar Syntax */
- @keyframes rainbow{
-   0%{color: #9900cc;}
-   9.09%{color: #6600ce;}
-   18.18%{color: #4100b4;}
-   27.27%{color: #0100fc;}
-   36.36%{color: #31cbcb;}
-   45.45%{color: #01cc00;}
-   54.54%{color: #99fe00;}
-   63.63%{color: #fffe01;}
-   72.72%{color: #ffcc00;}
-   81.81%{color: #fe9900;}
-   90.9%{color: #ff6501;}
-   100%{color: #fe0000;}
- }
- 
+
+
  .cssload-container {
  position: fixed;
  top: 0;
