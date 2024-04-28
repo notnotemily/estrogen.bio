@@ -1,7 +1,7 @@
 // play on load for gallery view
 setTimeout(transition, 0000);
 
-$('.js-trigger-transition').on('click', function(e) {
+$('.js-trigger-transition').on('load', function(e) {
   e.preventDefault();
   transition();
 });
