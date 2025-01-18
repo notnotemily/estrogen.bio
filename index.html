@@ -1,76 +1,119 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="css_js/style.css">
-<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-<link rel="icon" href="logo.png" type="image/png">
-
-<div class="loader">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-  <div class="bar4"></div>
-  <div class="bar5"></div>
-  <div class="bar6"></div>
-</div>
-
-
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/plugins/CSSRulePlugin.min.js'></script>
-
-  <script src="css_js/js/index.js"></script>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#7700FF">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta property="og:type" content="website">
-<meta property="og:url" content="estroggen.bio">
-<meta property="og:title" content="estra.one">
-<meta property="og:description" content="estra">
-<meta property="og:image" content="logo.png">
-<meta charset="utf-8">
-
-
-
-
-<title>estra.one</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+<style>
 
+#nowPlayingContainer {
+  margin-top: 19px;
+  display: flex;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.nowPlayingBox {
+  position: relative;
+  min-width: 400px;
+  display: flex;
+  height: 120px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* components.css */
+
+.playingContent {
+  position: relative;
+  min-width: 400px;
+  height: 120px;
+  display: flex;
+  background: radial-gradient(ellipse at top left, rgba(57, 57, 57, 0.3) 25%, rgba(166, 51, 243, 0.115) 75%);
+  border-radius: 25px;
+}
+
+.playingContent::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 25px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+#trackArtwork a img {
+  position: relative;
+  padding: 10px;
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 25px;
+  z-index: 2;
+  margin: .5rem;
+}
+
+.trackInfo {
+  z-index: 2;
+  margin-top: 1rem;
+  width: 45%;
+  padding-right: 10px;
+}
+
+#trackName a {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#artist a {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.spotifyLogo {
+  padding-top: 10px;
+  width: 80px;
+}
+
+.bg-base-300 {
+    --tw-bg-opacity: 1;
+    background-color: transparent;
+  }
+  
+
+
+  </style>
 <body>
+    <!-- Hero Section -->
+                         <div id="nowPlayingContainer" class="">
+                             <div class="nowPlayingBox">
+                                 <div class="bg-base-300" style="width: 400px; height: 120px; display:flex; border-radius: 25px;">
+                                            <div id="trackArtwork"><div class="skeleton bg-base-200 m-2" style="height: 100px; aspect-ratio: 1;"></div></div>
+                                            <div class="trackInfo">
+                                                    <p id="trackName" class="skeleton bg-base-200 w-36 h-4"></p>
+                                                    <div id="artist" class="skeleton bg-base-200 w-24 h-4 mt-1"></div>
+                                                    <img class="spotifyLogo" src="spotify.png">
+                                            </div>
+                                 </div>
+                            </div>
+                        </div>
+
+
+
+
    
-
-      <main>
-        
-    <div class="maintxt">
-        <div class="heading" id="heading">
-          
-            <a href="users" class="rainbow">
-            <pre class="logo" data-before="
-             _             
-            | |            
-    ___  ___| |_ _ __ __ _ 
-   / _ \/ __| __| '__/ _` |
-  |  __/\__ \ |_| | | (_| |
-   \___||___/\__|_|  \__,_|                                                  
-  ">
-           _             
-          | |            
-  ___  ___| |_ _ __ __ _ 
- / _ \/ __| __| '__/ _` |
-|  __/\_  \ |_| | | (_| |
- \___||___/\__|_|  \__,_|
-                         
-                         
-</pre>
-</a>
-    </div>
-      </div>
-    </div>
-    </main>
-
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/OrbitControls.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/GeometryUtils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/605067/OBJLoaderFaces.js"></script>
 </body>
+</html>
